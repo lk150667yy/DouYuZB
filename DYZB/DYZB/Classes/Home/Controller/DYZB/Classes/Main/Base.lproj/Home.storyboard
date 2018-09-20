@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rb0-Bu-eit">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="bQj-pv-kt8">
+            <objects>
+                <viewController id="FIi-n4-vGR" customClass="HomeViewController" customModule="DYZB" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zmp-IB-TvF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7TV-Fz-HOk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="azb-gM-7ZR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jGr-s6-mrs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1388" y="-503.29835082458777"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="5ia-Gj-p8C">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rb0-Bu-eit" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="btn_inputbar_nobility" selectedImage="btn_inputbar_nobilityHL_full" id="ha4-WP-odK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Pof-QM-lbc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FIi-n4-vGR" kind="relationship" relationship="rootViewController" id="Rec-gk-fgG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hfO-7f-oZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="448.80000000000001" y="-503.29835082458777"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_inputbar_nobility" width="18" height="18"/>
+        <image name="btn_inputbar_nobilityHL_full" width="18" height="18"/>
+    </resources>
+</document>

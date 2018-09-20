@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9wp-6c-lAm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cZH-tJ-6Ce">
+            <objects>
+                <viewController id="a58-Rn-Dmc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7qI-Na-eLf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xo7-TF-wxH"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cS8-qe-pma"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fh3-4f-DeH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1463" y="-2"/>
+        </scene>
+        <!--关注-->
+        <scene sceneID="jWu-Jf-mGX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9wp-6c-lAm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="关注" image="btn_inputbar_nobility" selectedImage="btn_inputbar_nobilityHL_full" id="P08-pu-nUK"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SeY-kl-tQW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="a58-Rn-Dmc" kind="relationship" relationship="rootViewController" id="hFj-xc-nit"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wmw-yB-8c9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="569" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_inputbar_nobility" width="18" height="18"/>
+        <image name="btn_inputbar_nobilityHL_full" width="18" height="18"/>
+    </resources>
+</document>
