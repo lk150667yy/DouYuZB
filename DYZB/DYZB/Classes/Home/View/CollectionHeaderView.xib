@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pqV-vR-gOo">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="10"/>
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="26P-Ig-umt"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_header_phone" translatesAutoresizingMaskIntoConstraints="NO" id="ch3-EK-gOX">
+                    <rect key="frame" x="10" y="20" width="18" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="5d5-a9-Wgc"/>
+                        <constraint firstAttribute="height" constant="24" id="wya-uy-Yra"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wc7-UH-E6O">
+                    <rect key="frame" x="38" y="22.5" width="33" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjU-AW-THb">
+                    <rect key="frame" x="250" y="15" width="60" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="kr3-2x-ozO"/>
+                    </constraints>
+                    <state key="normal" title="更多 &gt;">
+                        <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HjU-AW-THb" firstAttribute="top" secondItem="pqV-vR-gOo" secondAttribute="bottom" constant="5" id="228-Dt-gJK"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="pqV-vR-gOo" secondAttribute="trailing" id="33a-v5-ZDO"/>
+                <constraint firstItem="ch3-EK-gOX" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="35k-Gd-Bid"/>
+                <constraint firstItem="ch3-EK-gOX" firstAttribute="top" secondItem="pqV-vR-gOo" secondAttribute="bottom" constant="10" id="5wT-G1-suf"/>
+                <constraint firstItem="pqV-vR-gOo" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="CEt-rc-lQa"/>
+                <constraint firstItem="ch3-EK-gOX" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="10" id="HdQ-fZ-iqy"/>
+                <constraint firstItem="wc7-UH-E6O" firstAttribute="leading" secondItem="ch3-EK-gOX" secondAttribute="trailing" constant="10" id="YHV-QW-Vad"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="HjU-AW-THb" secondAttribute="trailing" constant="10" id="heV-YD-f9b"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="bottom" secondItem="HjU-AW-THb" secondAttribute="bottom" constant="5" id="mcZ-BJ-PFU"/>
+                <constraint firstItem="pqV-vR-gOo" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="pmX-JQ-fTG"/>
+                <constraint firstItem="wc7-UH-E6O" firstAttribute="centerY" secondItem="ch3-EK-gOX" secondAttribute="centerY" id="wsg-LH-Is0"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <point key="canvasLocation" x="-82" y="52"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="home_header_phone" width="18" height="18"/>
+    </resources>
+</document>
